@@ -11,9 +11,9 @@ source:
 requirements:
     build:
         - cmake
-        - {{ compiler('c') }}              # [not win]
-        - m2w64-gcc                        # [win]
-#        - vs2017_{{ target_platform  }}    # [win]
+        - {{ compiler('c') }}
+        - m2-patch                         # [win]
+#          - vs2017_{{ target_platform  }}    # [win]
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
