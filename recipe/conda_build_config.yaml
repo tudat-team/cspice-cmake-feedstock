@@ -1,4 +1,5 @@
 channel_sources:
-  - msys2
+  - msys2, conda-forge, defaults    # [win]
+  - conda-forge, defaults           # [not win]
 channel_targets:
   - tudat-team main
