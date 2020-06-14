@@ -1,0 +1,22 @@
+{% set name = "cspice-cmake" %}
+
+package:
+  name: "{{ name }}"
+  version: 66.0
+
+source:
+  git_rev: 31b8c106024454a4e09935b0081da375f6565f0a
+  git_url: https://github.com/tudat-team/cspice-cmake.git
+
+requirements:
+    build:
+        - cmake
+        - {{ compiler('c') }}              # [not win]
+#        - mingw                            # [win]
+        - vs2017_{{ target_platform  }}    # [win]
+
+about:
+  home: https://github.com/tudat-team/cspice-cmake
+  license: BSD
+  license_family: BSD
+  summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudatBundle.
