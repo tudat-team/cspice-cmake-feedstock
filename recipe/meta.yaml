@@ -5,7 +5,7 @@ package:
   version: 66.0
 
 source:
-  git_rev: 31b8c106024454a4e09935b0081da375f6565f0a
+  git_rev: 132bebde844c263ae1b5b287f96fb6e2b21580ce
   git_url: https://github.com/tudat-team/cspice-cmake.git
 
 requirements:
