@@ -2,7 +2,7 @@ mkdir build
 if errorlevel 1 exit 1
 cd build
 if errorlevel 1 exit 1
-$env:Path += "%LIBRARY_PREFIX%\mingw-w64\bin\"
+set PATH=%LIBRARY_PREFIX%\mingw-w64\bin\;%PATH%
 if errorlevel 1 exit 1
 cmake ^
     -G "MinGW Makefiles" ^
