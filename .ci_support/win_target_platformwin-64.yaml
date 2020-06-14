@@ -1,6 +1,6 @@
 channel_sources:
 - conda-forge,defaults
 channel_targets:
-- ggarrett13 main
+- tudat-team main
 target_platform:
 - win-64
