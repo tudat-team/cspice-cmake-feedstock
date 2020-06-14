@@ -18,7 +18,6 @@ requirements:
         - cmake
         - {{ compiler('c') }}               # [not win]
         - {{ compiler('m2w64_c') }}         # [win]
-        - {{ compiler('m2w64_fortran') }}   # [win]
 #        - m2w64-gcc                         # [win]
 #        - m2-patch                         # [win]
 #          - vs2017_{{ target_platform  }}    # [win]
