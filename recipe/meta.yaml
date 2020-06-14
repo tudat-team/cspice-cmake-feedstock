@@ -12,8 +12,8 @@ requirements:
     build:
         - cmake
         - {{ compiler('c') }}              # [not win]
-#        - mingw                            # [win]
-        - vs2017_{{ target_platform  }}    # [win]
+        - m2w64-gcc                        # [win]
+#        - vs2017_{{ target_platform  }}    # [win]
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
