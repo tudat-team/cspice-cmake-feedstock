@@ -8,3 +8,5 @@ channel_targets:
 - tudat-team main
 docker_image:
 - condaforge/linux-anvil-comp7
+target_platform:
+- linux-64

@@ -37,12 +37,6 @@ Current build status
       </a>
     </td>
   </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
-    </td>
-  </tr>
 </table>
 
 Current release info

@@ -67,12 +67,14 @@ docker run ${DOCKER_RUN_ARGS} \
            -v "${RECIPE_ROOT}":/home/conda/recipe_root:rw,z \
            -v "${FEEDSTOCK_ROOT}":/home/conda/feedstock_root:rw,z \
            -e CONFIG \
-           -e BINSTAR_TOKEN \
            -e HOST_USER_ID \
            -e UPLOAD_PACKAGES \
            -e GIT_BRANCH \
            -e UPLOAD_ON_BRANCH \
            -e CI \
+           -e FEEDSTOCK_NAME \
+           -e CPU_COUNT \
+           -e BINSTAR_TOKEN \
            $DOCKER_IMAGE \
            bash \
            /home/conda/feedstock_root/${PROVIDER_DIR}/build_steps.sh
