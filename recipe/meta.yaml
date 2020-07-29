@@ -9,7 +9,7 @@ source:
   git_url: https://github.com/tudat-team/cspice-cmake.git
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports:
     - m2w64-gcc-libs  # [win]
 
