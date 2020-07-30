@@ -14,4 +14,3 @@ cmake --build . --config RelWithDebInfo --target install
 if errorlevel 1 exit 1
 ctest
 if errorlevel 1 exit 1
-
