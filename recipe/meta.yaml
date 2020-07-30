@@ -10,17 +10,19 @@ source:
 
 build:
   number: 1
-  ignore_run_exports:
-    - m2w64-gcc-libs  # [win]
+#  ignore_run_exports:
+#    - m2w64-gcc-libs  # [win]
 
 requirements:
     build:
         - cmake
         - {{ compiler('c') }}               # [not win]
         - {{ compiler('m2w64_c') }}         # [win]
+#        - vs2017_{{ target_platform  }}     # [win]
+
 #        - m2w64-gcc                         # [win]
 #        - m2-patch                         # [win]
-#          - vs2017_{{ target_platform  }}    # [win]
+#        - vs2017_{{ target_platform  }}    # [win]
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
