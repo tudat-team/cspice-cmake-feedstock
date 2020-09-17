@@ -7,7 +7,7 @@ Package license: BSD
 
 Feedstock license: BSD-3-Clause
 
-Summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudatBundle.
+Summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudat-bundle.
 
 
 
@@ -15,26 +15,44 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>CircleCI</td>
+<table>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <a href="https://circleci.com/gh/tudat-team/cspice-cmake-feedstock">
-        <img alt="Linux" src="https://img.shields.io/circleci/project/github/tudat-team/cspice-cmake-feedstock/master.svg?label=Linux">
-      </a>
-    </td>
-  </tr><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://travis-ci.com/tudat-team/cspice-cmake-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/com/tudat-team/cspice-cmake-feedstock/master.svg?label=macOS">
-      </a>
-    </td>
-  </tr><tr>
-    <td>Appveyor</td>
-    <td>
-      <a href="https://ci.appveyor.com/project/tudat-team/cspice-cmake-feedstock/branch/master">
-        <img alt="windows" src="https://img.shields.io/appveyor/ci/tudat-team/cspice-cmake-feedstock/master.svg?label=Windows">
-      </a>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+            <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/cspice-cmake-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/cspice-cmake-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64</td>
+              <td>
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/cspice-cmake-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/cspice-cmake-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
