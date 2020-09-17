@@ -1,27 +1,30 @@
-{% set name = "cspice-cmake" %}
+{% set name = "cspice" %}
 
 package:
   name: "{{ name }}"
   version: 66.0
 
 source:
-  git_rev: 132bebde844c263ae1b5b287f96fb6e2b21580ce
-  git_url: https://github.com/tudat-team/cspice-cmake.git
+    url: http://naif.jpl.nasa.gov/pub/naif/toolkit//C/PC_Windows_VisualC_64bit/packages/cspice.zip    # [win]
+    url: http://naif.jpl.nasa.gov/pub/naif/toolkit//C/PC_Linux_GCC_64bit/packages/cspice.tar.Z        # [linux]
+    url: http://naif.jpl.nasa.gov/pub/naif/toolkit//C/MacIntel_OSX_AppleC_64bit/packages/cspice.tar.Z # [mac]
 
 build:
-  number: 1
-  ignore_run_exports:
-    - m2w64-gcc-libs  # [win]
+  number: 2
 
-requirements:
-    build:
-        - cmake
-        - {{ compiler('c') }}               # [not win]
-        - {{ compiler('m2w64_c') }}         # [win]
-        - m2w64-toolchain                   # [win]
+outputs:
+    - name: {{ name }}-devel
+      version: 66.0
+      script: move-files.py
+      test:
+        commands:
+          - test -f $PREFIX/include/SpiceUsr.h                                      # [unix]
+          - test -f $PREFIX/lib/cspice.so                                           # [unix]
+          - if not exist %PREFIX%\\Library\\include\\SpiceUsr.h exit 1              # [win]
+          - if not exist %PREFIX%\\Library\\lib\\cspice.lib exit 1                  # [win]
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
   license: BSD
   license_family: BSD
-  summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudatBundle.
+  summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudat-bundle.
