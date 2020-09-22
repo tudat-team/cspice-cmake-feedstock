@@ -10,15 +10,12 @@ source:
 
 build:
   number: 1
-  ignore_run_exports:
-    - m2w64-gcc-libs  # [win]
 
 requirements:
     build:
         - cmake
         - {{ compiler('c') }}               # [not win]
-        - {{ compiler('m2w64_c') }}         # [win]
-        - m2w64-toolchain                   # [win]
+        - {{ compiler('clang') }}           # [win]
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
