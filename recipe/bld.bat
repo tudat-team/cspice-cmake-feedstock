@@ -9,7 +9,7 @@ cmake ^
     -DCSPICE_BUILD_STATIC_LIBRARY=1 ^
     ..
 if errorlevel 1 exit 1
-cmake --build . --config RelWithDebInfo --target install
+cmake --build . --config Release --target install
 if errorlevel 1 exit 1
 ctest --verbose
 if errorlevel 1 exit 1
