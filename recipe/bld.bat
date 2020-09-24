@@ -6,7 +6,7 @@ cmake ^
     -G "%CMAKE_GEN%" ^
     -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
-    -DCSPICE_BUILD_STATIC_LIBRARY=0 ^
+    -DCSPICE_BUILD_STATIC_LIBRARY=1 ^
     ..
 if errorlevel 1 exit 1
 cmake --build . --config RelWithDebInfo --target install
