@@ -1,4 +1,4 @@
-{ % set name = "cspice-cmake" % }
+{% set name = "cspice-cmake" %}
 
 package:
   name: "{{ name }}"
@@ -12,21 +12,12 @@ build:
   number: 2
 
 requirements:
-  build:
-    - cmake
-    - { { compiler('c') } }
+    build:
+        - cmake
+        - {{ compiler('c') }}
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
-  license: MIT
-  license_family: MIT
-  summary: 'NASA ancillary information system built with, and for, CMake'
-  description: |
-    SPICE is an ancillary information system that provides scientists and
-    engineers the capability to include space geometry and event data into
-    mission design, science observation planning, and science data analysis
-    software.
-  doc_url: https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/index.html
-  extra:
-    recipe-maintainers:
-      - ggarrett13
+  license: BSD
+  license_family: BSD
+  summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudatBundle.
