@@ -9,8 +9,8 @@ source:
   git_url: https://github.com/tudat-team/cspice-cmake.git
 
 build:
-  number: 4 # [win]
-  number: 3 # [not win]
+  number: 5 # [win]
+  number: 4 # [not win]
 
 requirements:
     build:
