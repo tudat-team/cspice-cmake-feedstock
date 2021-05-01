@@ -13,7 +13,7 @@ cmake \
 
 make -j2
 
-if [ "$HOST_PLATFORM" != "osx-arm64" ]; then
+if [  ! "$CONDA_BUILD_CROSS_COMPILATION" ]; then
   ctest --verbose
 fi
 
