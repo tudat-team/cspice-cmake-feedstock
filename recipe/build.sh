@@ -13,7 +13,7 @@ cmake \
 
 make -j2
 
-if [  ! "$CONDA_BUILD_CROSS_COMPILATION" ]; then
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
   ctest --verbose
 fi
 
