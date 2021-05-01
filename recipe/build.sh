@@ -13,6 +13,8 @@ cmake \
 
 make -j2
 
-ctest --verbose
+if [ "$HOST_PLATFORM" != "osx-arm64" ]; then
+  ctest --verbose
+fi
 
 make install
