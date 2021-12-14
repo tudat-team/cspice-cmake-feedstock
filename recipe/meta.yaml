@@ -16,6 +16,7 @@ requirements:
     build:
         - cmake
         - {{ compiler('c') }}
+        - make    # [unix]
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
