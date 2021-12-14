@@ -15,7 +15,8 @@ build:
 requirements:
     build:
         - cmake
-        - {{ compiler('c') }}
+        - {{ compiler('clang') }}   # [win]
+        - {{ compiler('c') }}   # [not win]
         - make    # [unix]
 
 about:
