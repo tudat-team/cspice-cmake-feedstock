@@ -79,16 +79,41 @@ conda config --add channels tudat-team
 conda config --set channel_priority strict
 ```
 
-Once the `tudat-team` channel has been enabled, `cspice-cmake` can be installed with:
+Once the `tudat-team` channel has been enabled, `cspice-cmake` can be installed with `conda`:
 
 ```
 conda install cspice-cmake
 ```
 
-It is possible to list all of the versions of `cspice-cmake` available on your platform with:
+or with `mamba`:
+
+```
+mamba install cspice-cmake
+```
+
+It is possible to list all of the versions of `cspice-cmake` available on your platform with `conda`:
 
 ```
 conda search cspice-cmake --channel tudat-team
+```
+
+or with `mamba`:
+
+```
+mamba search cspice-cmake --channel tudat-team
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search cspice-cmake --channel tudat-team
+
+# List packages depending on `cspice-cmake`:
+mamba repoquery whoneeds cspice-cmake --channel tudat-team
+
+# List dependencies of `cspice-cmake`:
+mamba repoquery depends cspice-cmake --channel tudat-team
 ```
 
 
