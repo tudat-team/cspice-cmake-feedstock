@@ -3,3 +3,7 @@ channel_sources:
   - conda-forge, defaults           # [not win]
 channel_targets:
   - tudat-team main
+c_compiler:       # [win]
+  - clang         # [win]
+cxx_compiler:     # [win]
+  - clang         # [win]

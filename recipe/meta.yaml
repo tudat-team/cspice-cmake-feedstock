@@ -9,18 +9,18 @@ source:
   git_url: https://github.com/tudat-team/cspice-cmake.git
 
 build:
-  number: 5 # [win]
-  number: 4 # [not win]
+  number: 6
 
 requirements:
     build:
         - cmake
-        - {{ compiler('clang') }}   # [win]
-        - {{ compiler('c') }}   # [not win]
+        - {{ compiler('cxx') }}
+        - {{ compiler('c') }}
+        - {{ compiler('clang') }}  # [win]
         - make    # [unix]
 
 about:
   home: https://github.com/tudat-team/cspice-cmake
   license: BSD
   license_family: BSD
-  summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudatBundle.
+  summary: Mirror of SPICE Toolbox sourcecode with additional CMake files.

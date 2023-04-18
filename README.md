@@ -7,7 +7,7 @@ Home: https://github.com/tudat-team/cspice-cmake
 
 Package license: BSD
 
-Summary: Mirror of SPICE Toolbox sourcecode with additional CMake files for building along the tudatBundle.
+Summary: Mirror of SPICE Toolbox sourcecode with additional CMake files.
 
 Current build status
 ====================

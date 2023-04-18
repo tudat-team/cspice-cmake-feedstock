@@ -1,6 +1,10 @@
+c_compiler:
+- clang
 channel_sources:
 - msys2, conda-forge, defaults
 channel_targets:
 - tudat-team main
+cxx_compiler:
+- clang
 target_platform:
 - win-64
