@@ -1,7 +1,7 @@
 c_compiler:
 - clang
 channel_sources:
-- msys2, conda-forge, defaults
+- conda-forge, defaults
 channel_targets:
 - tudat-team main
 cxx_compiler:
