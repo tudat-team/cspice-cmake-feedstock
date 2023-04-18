@@ -17,6 +17,7 @@ requirements:
         - {{ compiler('cxx') }}
         - {{ compiler('c') }}
         - {{ compiler('clang') }}  # [win]
+        - vs2015_runtime # [win]
         - make    # [unix]
 
 about:
