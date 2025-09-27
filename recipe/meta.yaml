@@ -5,11 +5,11 @@ package:
   version: 67
 
 source:
-  git_rev: 4f1a62b354277ac8e363834c9af5fb32f88ddd11
+  git_rev: e44da83b8a7a420fdddf02d2e3accebd0ab86e5e
   git_url: https://github.com/tudat-team/cspice-cmake.git
 
 build:
-  number: 1
+  number: 2
 
 requirements:
     build:
